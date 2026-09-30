@@ -1,22 +1,24 @@
-# sv
+# Live@LNSC
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is the website for UNSW Linux Society's lightning talks series "Live@LNSC".
 
-## Creating a project
+## Design
 
-If you're seeing this, you've probably already done this step. Congrats!
+I am intentionally not creating a "reusable set of components" for the project.
+This is because we want to give each instance of the event a unique aesthetic.
+As we host more of these sessions, each session will end up with its own theme
+that its promotional page is built around.
 
-```sh
-# create a new project
-npx sv create my-app
-```
+In addition, we want to facilitate a little bit of custom styling and layout for
+each presenter as a way to make things more unique, so I also didn't take steps
+to prevent duplication on that front.
 
-To recreate this project with the same configuration:
+## Updating to prep for a new event
 
-```sh
-# recreate this project
-npx sv@0.17.1 create --template minimal --types ts --add eslint --install npm .
-```
+1. Move the old page into a subdirectory (eg `lal4` for the fourth one?)
+2. Update the new page with a new aesthetic.
+3. You should keep the aesthetic for the old page intact if possible.
+4. At some point we need to create a "past events" list for the main page.
 
 ## Developing
 
@@ -29,14 +31,17 @@ npm run dev
 npm run dev -- --open
 ```
 
+In addition:
+
+* Run linting: `npm run lint`
+* Run type-checks: `npm run check`
+
 ## Building
 
-To create a production version of your app:
+To create a production version of the site:
 
 ```sh
 npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
