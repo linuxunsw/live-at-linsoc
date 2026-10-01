@@ -1,8 +1,8 @@
 <h3>The Wayland Protocol (Briefly)</h3>
 
 <p>
-  You will only know how violent Liam becomes while watching someone discuss Wayland if you watch
-  this talk.
+  A look at the core Wayland Protocol, surfaces and seats, and a discussion of extension Wayland
+  protocols.
 </p>
 <p>Presented by Cameron</p>
 
