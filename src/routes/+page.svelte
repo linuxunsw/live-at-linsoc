@@ -1,10 +1,10 @@
 <script>
-  import Aaryan from './lal4/Aaryan.svelte';
-  import Background from './lal4/Background.svelte';
-  import Hero from './lal4/Hero.svelte';
-  import Cameron from './lal4/Cameron.svelte';
-  import Evan from './lal4/Evan.svelte';
-  import Wiki from './lal4/Wiki.svelte';
+  import Aaryan from './26t3w4/Aaryan.svelte';
+  import Background from './26t3w4/Background.svelte';
+  import Hero from './26t3w4/Hero.svelte';
+  import Cameron from './26t3w4/Cameron.svelte';
+  import Evan from './26t3w4/Evan.svelte';
+  import Wiki from './26t3w4/Wiki.svelte';
 </script>
 
 <Background />

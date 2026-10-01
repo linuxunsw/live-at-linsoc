@@ -1,10 +1,10 @@
 <script>
-  import Lal4 from './lal4.jpg';
+  import Background from './bg.jpg';
   import Stars from './Stars.svelte';
 </script>
 
 <div>
-  <img alt="" src={Lal4} />
+  <img alt="" src={Background} />
 
   <Stars />
 </div>
