@@ -14,6 +14,9 @@
     '#ffe196',
     '#ffd300',
     '#ffb643',
+    '#a0fbff',
+    '#ffe7d7',
+    '#fffbea',
   ];
 
   const splotches: Splotch[] = $derived(
@@ -49,7 +52,7 @@
   }
 
   .dot {
-    z-index: -1;
+    z-index: -10;
     width: 0;
     height: 0;
     position: absolute;
