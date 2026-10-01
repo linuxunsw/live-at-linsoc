@@ -15,23 +15,23 @@
   }
   .date {
     font-size: calc(min(3rem, 6vw, 6vh));
-    transform: rotate(calc(2deg - var(--scroll) * 0.02deg))
-      scale(calc(1 - var(--scroll) * 0.0001));
+    transform: rotate(calc(2deg - var(--scroll-reduced-motion) * 0.02deg))
+      scale(calc(1 - var(--scroll-reduced-motion) * 0.0001));
   }
   .time {
     font-size: calc(min(2.5rem, 5vw, 5vh));
-    transform: rotate(calc(-3deg + var(--scroll) * 0.01deg))
-      scale(calc(1 + var(--scroll) * 0.0002));
+    transform: rotate(calc(-3deg + var(--scroll-reduced-motion) * 0.01deg))
+      scale(calc(1 + var(--scroll-reduced-motion) * 0.0002));
   }
   .location {
     font-size: calc(min(3rem, 6vw, 6vh));
-    transform: rotate(calc(1deg + var(--scroll) * 0.005deg))
-      scale(calc(1 + var(--scroll) * 0.0001));
+    transform: rotate(calc(1deg + var(--scroll-reduced-motion) * 0.005deg))
+      scale(calc(1 + var(--scroll-reduced-motion) * 0.0001));
   }
   .tix {
     font-size: calc(min(3.5rem, 7vw, 7vh));
-    transform: rotate(calc(-1deg - var(--scroll) * 0.02deg))
-      scale(calc(1 + var(--scroll) * 0.0003));
+    transform: rotate(calc(-1deg - var(--scroll-reduced-motion) * 0.02deg))
+      scale(calc(1 + var(--scroll-reduced-motion) * 0.0003));
   }
   a {
     color: black;

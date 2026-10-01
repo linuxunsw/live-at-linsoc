@@ -17,7 +17,7 @@
 
 <main>
   <p class="event-description">
-    Join us for 2 hours of student-run lightning talks, exploring the world of software engineering,
+    Join us for 2 hours of student-run presentations, exploring the world of software engineering,
     including topics on free and open-source software, Linux, security, self-hosting, and programming.
   </p>
 
@@ -50,10 +50,11 @@
   .event-description {
     text-align: center;
     max-width: 800px;
+    transform: rotate(calc(-1deg + var(--scroll-reduced-motion) * 0.001deg));
   }
 
   h2 {
     font-size: 3.5rem;
-    transform: rotate(calc(1deg + var(--scroll) * 0.002deg));
+    transform: rotate(calc(1deg + var(--scroll-reduced-motion) * 0.002deg));
   }
 </style>

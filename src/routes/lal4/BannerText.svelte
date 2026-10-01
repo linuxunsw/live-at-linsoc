@@ -18,16 +18,16 @@
   }
 
   .live {
-    transform: rotate(calc(1.5deg - var(--scroll) * 0.02deg));
+    transform: rotate(calc(1.5deg - var(--scroll-reduced-motion) * 0.02deg));
     height: calc(min(30vw, 20vh, 15rem) * 0.6);
   }
   .at {
-    transform: rotate(calc(-1deg - var(--scroll) * 0.02deg))
-      scale(calc(1.25 + var(--scroll) * 0.0004));
+    transform: rotate(calc(-1deg - var(--scroll-reduced-motion) * 0.02deg))
+      scale(calc(1.25 + var(--scroll-reduced-motion) * 0.0004));
     height: calc(min(30vw, 20vh, 15rem) * 0.9);
     z-index: 1;
   }
   .linsoc {
-    transform: rotate(calc(-2.5deg + var(--scroll) * 0.02deg));
+    transform: rotate(calc(-2.5deg + var(--scroll-reduced-motion) * 0.02deg));
   }
 </style>

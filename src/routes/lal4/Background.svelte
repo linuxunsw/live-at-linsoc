@@ -19,7 +19,7 @@
     z-index: -10;
   }
   img {
-    bottom: calc(0px - var(--scroll) * 1px);
+    bottom: calc(0px - var(--scroll-reduced-motion) * 1px);
     opacity: calc(100 / var(--scroll));
     right: 0;
     position: fixed;
