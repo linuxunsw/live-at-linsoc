@@ -1,9 +1,12 @@
 <script>
   import Lal4 from './lal4.jpg';
+  import Stars from './Stars.svelte';
 </script>
 
 <div>
   <img alt="" src={Lal4} />
+
+  <Stars />
 </div>
 
 <style>
