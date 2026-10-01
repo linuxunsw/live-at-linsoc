@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     text-shadow: 0px 0px 5px white;
   }
   .date {

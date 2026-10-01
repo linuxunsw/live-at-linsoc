@@ -30,6 +30,10 @@
 </main>
 
 <style>
+  :root {
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    font-weight: normal;
+  }
   #hero {
     height: 90vh;
   }

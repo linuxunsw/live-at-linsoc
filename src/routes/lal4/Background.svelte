@@ -17,7 +17,7 @@
   }
   img {
     bottom: calc(0px - var(--scroll) * 2.5px);
-    opacity: calc(300 / var(--scroll));
+    opacity: calc(100 / var(--scroll));
     right: 0;
     position: fixed;
     min-width: 100vw;
