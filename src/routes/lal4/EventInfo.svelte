@@ -1,8 +1,8 @@
 <div class="event-info">
   <span class="date">Friday 9th October (Week 4)</span>
   <span class="time">12-2 PM</span>
-  <span class="location"><a target="_blank" href="https://link.mazemap.com/ZGwAjS3l">H13 Lawrence Theatre</a></span>
-  <span class="tix"><a target="_blank" href="https://campus.hellorubric.com/?eid=85710">Get your tickets</a></span>
+  <span class="location"><a target="_blank" href="https://link.mazemap.com/ZGwAjS3l"><i class="las la-link"></i>H13 Lawrence Theatre</a></span>
+  <span class="tix"><a target="_blank" href="https://campus.hellorubric.com/?eid=85710"><i class="las la-link"></i>Get your tickets</a></span>
 </div>
 
 <style>
