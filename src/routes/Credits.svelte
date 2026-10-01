@@ -1,10 +1,10 @@
 <script>
-  import ls from './ls.svg';
+  import pengwing from './pengwing.png';
 </script>
 
 <footer>
   <p>Hosted with &lt;3 by the <a target="_blank" href="https://linuxunsw.org/">UNSW Linux Society</a></p>
-  <img class="logo" src={ls} alt="">
+  <img class="logo" src={pengwing} alt="">
 </footer>
 
 <style>
@@ -15,7 +15,8 @@
     padding-bottom: 0px;
     overflow-y: hidden;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
+    justify-content: right;
   }
   a {
     color: white;
@@ -26,8 +27,7 @@
   }
 
   .logo {
-    position: relative;
+    image-rendering: pixelated;
     width: 100px;
-    top: 25px
   }
 </style>
