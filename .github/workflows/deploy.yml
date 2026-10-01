@@ -1,0 +1,51 @@
+name: Generate and deploy site
+on:
+  # Documentation can be either manually updated or is automatically updated when pushed to main branch
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+
+permissions:
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  # Cancel older deploy workflow when more than one is running
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Build and deploy site
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }} # Output URL after the workflow has finished
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: ".nvmrc"
+          cache: "npm"
+
+      - run: npm ci
+
+      - name: Build Site
+        id: build
+        run: npm run build
+
+      - name: Upload Artifact
+        id: upload
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./build/
+
+      - name: Deploy
+        id: deploy
+        uses: actions/deploy-pages@v5
