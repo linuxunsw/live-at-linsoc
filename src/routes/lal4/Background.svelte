@@ -27,4 +27,13 @@
     object-fit: cover;
     z-index: -9;
   }
+
+  @media (prefers-contrast: more) {
+    div {
+      background-color: #33148B;
+    }
+    img {
+      filter: brightness(30%);
+    }
+  }
 </style>

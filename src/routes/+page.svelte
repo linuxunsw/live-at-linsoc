@@ -1,21 +1,19 @@
 <script>
   import Aaryan from './lal4/Aaryan.svelte';
   import Background from './lal4/Background.svelte';
-  import BannerText from './lal4/BannerText.svelte';
+  import Hero from './lal4/Hero.svelte';
   import Cameron from './lal4/Cameron.svelte';
   import Evan from './lal4/Evan.svelte';
-  import EventInfo from './lal4/EventInfo.svelte';
   import Wiki from './lal4/Wiki.svelte';
 </script>
 
 <Background />
 
 <div id="hero">
-  <BannerText />
-  <EventInfo />
+  <Hero />
 </div>
 
-<main>
+<main id="main">
   <p class="event-description">
     Join us for 2 hours of student-run presentations, exploring the world of software engineering,
     including topics on free and open-source software, Linux, security, self-hosting, and programming.

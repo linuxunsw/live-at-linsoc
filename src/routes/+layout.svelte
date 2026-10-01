@@ -7,8 +7,6 @@
 
   const reducedMotion = new MediaQuery('prefers-reduced-motion: reduce');
 
-  $inspect(reducedMotion.current);
-
   const storeScrollPosition = () => {
     document.documentElement.style.setProperty('--scroll', `${document.documentElement.scrollTop}`);
     document.documentElement.style.setProperty(
