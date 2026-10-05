@@ -3,6 +3,12 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { defineConfig } from 'vite';
 
+try {
+  process.loadEnvFile('.env');
+} catch (e) {
+  console.log('Could not load .env file.');
+}
+
 export default defineConfig({
 	plugins: [
 		sveltekit({
@@ -21,5 +27,8 @@ export default defineConfig({
 			// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 			adapter: adapter()
 		})
-	]
+  ],
+  define: {
+    'import.meta.env.DEPLOY_DOMAIN': process.env.DEPLOY_DOMAIN,
+	},
 });

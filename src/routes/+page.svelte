@@ -4,6 +4,8 @@
   import Hero from './26t3w4/Hero.svelte';
   import Talk from './26t3w4/Talk.svelte';
 
+  const DEPLOY_DOMAIN = import.meta.env.DEPLOY_DOMAIN;
+
   const talks = [
     {
       title: 'Initial Userspace and Booting Linux',
@@ -40,8 +42,8 @@
     'live at linsoc',
     'live at lnsc',
   ];
-  const pengwing = asset('/pengwing.png');
-  const socialsPreview = asset('/socials-preview.jpg');
+  const pengwing = DEPLOY_DOMAIN + asset('/pengwing.png');
+  const socialsPreview = DEPLOY_DOMAIN + asset('/socials-preview.jpg');
 </script>
 
 <svelte:head>

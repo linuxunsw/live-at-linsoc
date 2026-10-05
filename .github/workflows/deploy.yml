@@ -36,6 +36,9 @@ jobs:
 
       - run: npm ci
 
+      - name: Configure deploy URL
+        run: echo "DEPLOY_DOMAIN=https://linuxunsw.github.io/live-at-linsoc" > .env
+
       - name: Build Site
         id: build
         run: npm run build
