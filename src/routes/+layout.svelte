@@ -1,6 +1,5 @@
 <script lang="ts">
   import { MediaQuery } from 'svelte/reactivity';
-  import favicon from '$lib/assets/favicon.svg';
   import Credits from './Credits.svelte';
 
   const { children } = $props();
@@ -32,10 +31,6 @@
 </script>
 
 <svelte:window onscroll={storeScrollPosition} onresize={storeScrollPosition} />
-
-<svelte:head>
-  <link rel="icon" href={favicon} />
-</svelte:head>
 
 {@render children()}
 

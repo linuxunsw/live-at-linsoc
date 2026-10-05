@@ -27,6 +27,24 @@
   ];
 </script>
 
+<svelte:head>
+  <title>Live@LNSC</title>
+  <link rel="icon" type="image/png" href="pengwing.png">
+  <link rel="apple-touch-icon" type="image/png" href="pengwing.png">
+  <meta name="description" content="Join us for 2 hours of student-run presentations, exploring the world of software engineering" />
+  <meta name="keywords" content="linux, unsw, linsoc, live, lightning talk, event, live at linsoc, live at lnsc">
+  <meta name="og:title" content="Live@LNSC // 26T3 Week 4" />
+  <meta name="og:description" content="Join us for 2 hours of student-run presentations, exploring the world of software engineering" />
+  <meta name="og:image" content="socials-preview.jpg">
+  <meta name="og:locale" content="en_AU" />
+  <meta name="og:site_name" content="Live@LNSC" />
+  <!-- Let's be different syndrome -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Live@LNSC // 26T3 Week 4">
+  <meta name="twitter:description" content="Join us for 2 hours of student-run presentations, exploring the world of software engineering" />
+  <meta name="twitter:image" content="socials-preview.jpg">
+</svelte:head>
+
 <Background />
 
 <div id="hero">
