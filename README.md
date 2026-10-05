@@ -15,8 +15,8 @@ to prevent duplication on that front.
 
 ## Updating to prep for a new event
 
-1. Move the old page into a subdirectory (eg `lal4` for the fourth one?)
-2. Update the new page with a new aesthetic.
+1. Move the old page into a subdirectory (eg `26t3w4` for the one in 26t3, week 4).
+2. Update the root page with a new aesthetic.
 3. You should keep the aesthetic for the old page intact if possible.
 4. At some point we need to create a "past events" list for the main page.
 
