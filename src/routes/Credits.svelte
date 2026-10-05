@@ -29,5 +29,11 @@
   .logo {
     image-rendering: pixelated;
     width: 100px;
+    transform: translate(0, 10px);
+    transition: all 0.1s;
+  }
+
+  footer:hover .logo {
+    transform: none;
   }
 </style>
