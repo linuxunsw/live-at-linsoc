@@ -19,6 +19,8 @@ export default defineConfig({
       },
       preprocess: [vitePreprocess()],
       paths: {
+        // @ts-expect-error -- We expect the .env to be valid if it is defined.
+        assets: process.env.DEPLOY_DOMAIN ?? undefined,
         base: '/live-at-linsoc',
       },
 

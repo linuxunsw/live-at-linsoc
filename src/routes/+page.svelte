@@ -3,7 +3,6 @@
   import Background from './26t3w4/Background.svelte';
   import Hero from './26t3w4/Hero.svelte';
   import Talk from './26t3w4/Talk.svelte';
-  import * as env from '$app/env';
 
   const talks = [
     {
@@ -41,10 +40,8 @@
     'live at linsoc',
     'live at lnsc',
   ];
-  // @ts-expect-error -- we give a fallback
-  const pengwing = (env.DEPLOY_DOMAIN ?? '') + asset('/pengwing.png');
-  // @ts-expect-error -- we give a fallback
-  const socialsPreview = (env.DEPLOY_DOMAIN ?? '') + asset('/socials-preview.jpg');
+  const pengwing = asset('/pengwing.png');
+  const socialsPreview = asset('/socials-preview.jpg');
 </script>
 
 <svelte:head>
