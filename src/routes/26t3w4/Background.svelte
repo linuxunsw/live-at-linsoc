@@ -21,6 +21,7 @@
   img {
     bottom: calc(0px - var(--scroll-reduced-motion) * 1px);
     opacity: calc(100 / var(--scroll));
+    transition: all 0.1s linear;
     right: 0;
     position: fixed;
     min-width: 100vw;

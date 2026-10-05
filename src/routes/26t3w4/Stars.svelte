@@ -49,6 +49,7 @@
 <style>
   .splotch-box {
     opacity: calc(var(--scroll) * 0.5%);
+    transition: all 0.1s linear;
   }
 
   .dot {

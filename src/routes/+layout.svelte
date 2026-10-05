@@ -7,6 +7,19 @@
 
   const reducedMotion = new MediaQuery('prefers-reduced-motion: reduce');
 
+  // Adapted from: https://www.joshwcomeau.com/snippets/javascript/debounce/
+  function debounce<T>(callback: (...a: T[]) => void, wait: number): (...a: T[]) => void {
+    let timeoutId: ReturnType<typeof setTimeout> | null = null;
+    return (...args) => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      timeoutId = setTimeout(() => {
+        callback(...args);
+      }, wait);
+    };
+  };
+
   const storeScrollPosition = () => {
     document.documentElement.style.setProperty('--scroll', `${document.documentElement.scrollTop}`);
     document.documentElement.style.setProperty(
@@ -15,7 +28,7 @@
     );
   };
 
-  $effect(storeScrollPosition);
+  $effect(debounce(storeScrollPosition, 250));
 </script>
 
 <svelte:window onscroll={storeScrollPosition} onresize={storeScrollPosition} />

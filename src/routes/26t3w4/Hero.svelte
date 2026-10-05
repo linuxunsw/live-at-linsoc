@@ -35,16 +35,19 @@
 
   .live {
     transform: rotate(calc(1.5deg - var(--scroll-reduced-motion) * 0.02deg));
+    transition: all 0.1s linear;
     height: calc(min(30vw, 20vh, 15rem) * 0.6);
   }
   .at {
     transform: rotate(calc(-1deg - var(--scroll-reduced-motion) * 0.02deg))
       scale(calc(1.25 + var(--scroll-reduced-motion) * 0.0004));
+    transition: all 0.1s linear;
     height: calc(min(30vw, 20vh, 15rem) * 0.9);
     z-index: 1;
   }
   .linsoc {
     transform: rotate(calc(-2.5deg + var(--scroll-reduced-motion) * 0.02deg));
+    transition: all 0.1s linear;
   }
 
   .event-info {
@@ -57,21 +60,25 @@
     font-size: calc(min(3rem, 6vw, 6vh));
     transform: rotate(calc(2deg - var(--scroll-reduced-motion) * 0.02deg))
       scale(calc(1 - var(--scroll-reduced-motion) * 0.0001));
+    transition: all 0.1s linear;
   }
   .time {
     font-size: calc(min(2.5rem, 5vw, 5vh));
     transform: rotate(calc(-3deg + var(--scroll-reduced-motion) * 0.01deg))
       scale(calc(1 + var(--scroll-reduced-motion) * 0.0002));
+    transition: all 0.1s linear;
   }
   .location {
     font-size: calc(min(3rem, 6vw, 6vh));
     transform: rotate(calc(1deg + var(--scroll-reduced-motion) * 0.005deg))
       scale(calc(1 + var(--scroll-reduced-motion) * 0.0001));
+    transition: all 0.1s linear;
   }
   .tix {
     font-size: calc(min(3.5rem, 7vw, 7vh));
     transform: rotate(calc(-1deg - var(--scroll-reduced-motion) * 0.02deg))
       scale(calc(1 + var(--scroll-reduced-motion) * 0.0003));
+    transition: all 0.1s linear;
   }
   a {
     color: black;
@@ -83,6 +90,7 @@
   .down {
     font-size: 3rem;
     transition: translate 0.2s;
+    transition: all 0.1s linear;
   }
   .down:hover {
     translate: 0 5px;
