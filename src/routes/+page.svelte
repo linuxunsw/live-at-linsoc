@@ -1,10 +1,30 @@
 <script>
-  import Aaryan from './26t3w4/Aaryan.svelte';
   import Background from './26t3w4/Background.svelte';
   import Hero from './26t3w4/Hero.svelte';
-  import Cameron from './26t3w4/Cameron.svelte';
-  import Evan from './26t3w4/Evan.svelte';
-  import Wiki from './26t3w4/Wiki.svelte';
+  import Talk from './26t3w4/Talk.svelte';
+
+  const talks = [
+    {
+      title: 'Initial Userspace and Booting Linux',
+      description: 'An overview of what the Linux initial userspace does, covering initrd and initramfs, a couple specialty Linux syscalls and enough extra information to help you feel more confident making your own.',
+      presenter: 'Wiki',
+    },
+    {
+      title: 'The Wayland Protocol (Briefly)',
+      description: 'A look at the core Wayland Protocol, surfaces and seats, and a discussion of extension Wayland protocols.',
+      presenter: 'Cameron',
+    },
+    {
+      title: "ambatuCAM: exploiting cheaters' button cameras",
+      description: 'We present ambatuCAM, a novel technique to tackle cheating in any exam environment.',
+      presenter: 'Evan',
+    },
+    {
+      title: 'Obfuscating Java to Compete With a Non-Compete',
+      description: 'How to fight back against readable but legally unusable code by playing dirtier.',
+      presenter: 'Presented by Aaryan',
+    },
+  ];
 </script>
 
 <Background />
@@ -21,10 +41,15 @@
 
   <h2>26T3 Line-up</h2>
 
-  <Wiki />
+  {#each talks as talk, i (i)}
+    <Talk
+      {...talk}
+    />
+  {/each}
+  <!-- <Wiki />
   <Cameron />
   <Evan />
-  <Aaryan />
+  <Aaryan /> -->
 </main>
 
 <style>
