@@ -28,7 +28,4 @@ export default defineConfig({
 			adapter: adapter()
 		})
   ],
-  define: {
-    'import.meta.env.DEPLOY_DOMAIN': process.env.DEPLOY_DOMAIN,
-	},
 });
