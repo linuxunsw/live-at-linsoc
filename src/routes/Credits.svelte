@@ -1,6 +1,10 @@
+<script>
+  import { asset } from '$app/paths';
+  const pengwing = asset('/pengwing.png');
+</script>
 <footer>
   <p>Hosted with &lt;3 by the <a target="_blank" href="https://linuxunsw.org/"><i class="las la-link"></i>UNSW Linux Society</a></p>
-  <img class="logo" src="pengwing.png" alt="">
+  <img class="logo" src={pengwing} alt="">
 </footer>
 
 <style>

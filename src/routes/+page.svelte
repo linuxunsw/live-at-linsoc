@@ -1,4 +1,5 @@
 <script>
+  import { asset } from '$app/paths';
   import Background from './26t3w4/Background.svelte';
   import Hero from './26t3w4/Hero.svelte';
   import Talk from './26t3w4/Talk.svelte';
@@ -25,24 +26,40 @@
       presenter: 'Aaryan',
     },
   ];
+
+  const siteName = 'Live@LNSC';
+  const title = 'Live@LNSC // 26T3 Week 4';
+  const description = 'Join us for 2 hours of student-run presentations, exploring the world of software engineering';
+  const keywords = [
+    'linux',
+    'unsw',
+    'linsoc',
+    'live',
+    'lightning talk',
+    'event',
+    'live at linsoc',
+    'live at lnsc',
+  ];
+  const pengwing = asset('/pengwing.png');
+  const socialsPreview = asset('/socials-preview.jpg');
 </script>
 
 <svelte:head>
-  <title>Live@LNSC</title>
-  <link rel="icon" type="image/png" href="pengwing.png">
-  <link rel="apple-touch-icon" type="image/png" href="pengwing.png">
-  <meta name="description" content="Join us for 2 hours of student-run presentations, exploring the world of software engineering" />
-  <meta name="keywords" content="linux, unsw, linsoc, live, lightning talk, event, live at linsoc, live at lnsc">
-  <meta name="og:title" content="Live@LNSC // 26T3 Week 4" />
-  <meta name="og:description" content="Join us for 2 hours of student-run presentations, exploring the world of software engineering" />
-  <meta name="og:image" content="socials-preview.jpg">
+  <title>{title}</title>
+  <link rel="icon" type="image/png" href={pengwing}>
+  <link rel="apple-touch-icon" type="image/png" href={pengwing}>
+  <meta name="description" content={description} />
+  <meta name="keywords" content={keywords.join(', ')}>
+  <meta name="og:title" content={title} />
+  <meta name="og:description" content={description} />
+  <meta name="og:image" content={socialsPreview}>
   <meta name="og:locale" content="en_AU" />
-  <meta name="og:site_name" content="Live@LNSC" />
+  <meta name="og:site_name" content={siteName} />
   <!-- Let's be different syndrome -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Live@LNSC // 26T3 Week 4">
-  <meta name="twitter:description" content="Join us for 2 hours of student-run presentations, exploring the world of software engineering" />
-  <meta name="twitter:image" content="socials-preview.jpg">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={socialsPreview}>
 </svelte:head>
 
 <Background />
