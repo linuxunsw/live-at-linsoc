@@ -22,7 +22,7 @@
     {
       title: 'Obfuscating Java to Compete With a Non-Compete',
       description: 'How to fight back against readable but legally unusable code by playing dirtier.',
-      presenter: 'Presented by Aaryan',
+      presenter: 'Aaryan',
     },
   ];
 </script>
