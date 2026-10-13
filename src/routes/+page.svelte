@@ -1,7 +1,7 @@
 <script>
   import { asset } from '$app/paths';
   import Background from './26t3w4/Background.svelte';
-  import Hero from './26t3w4/Hero.svelte';
+  import Hero from './Hero.svelte';
   import Talk from './26t3w4/Talk.svelte';
 
   const talks = [
