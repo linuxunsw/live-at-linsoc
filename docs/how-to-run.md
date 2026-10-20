@@ -1,4 +1,4 @@
-# How to Run Live@LNSC
+# How to Run Live@LNSC in a UNSW Lecture Theatre
 
 It turns out that running presentations like this is very difficult. Here is
 everything that you need to know to run your own set of student presentations.
@@ -8,14 +8,20 @@ hardware. If you were to run presentations elsewhere, you'd need to get your own
 hardware to replace this. Make sure you understand what your presentation room
 offers. Test it ahead of time so you don't get any last-minute surprises.
 
+![AV configuration diagram](av-configuration.svg)
+
 ## UNSW's AV Setup
 
 * Handheld mic (good).
 * Lapel mic (bad).
 * Lectern mic (wrong position, a bit crunchy sometimes).
 * All audio comes in through a [Dante](https://www.getdante.com/meet-dante/what-is-dante/)
-  interface, via the USB dock. This appears to only give one input with the room
-  mix.
+  interface, via the USB dock.
+    * This appears to only give one input with the room mix. Note that
+      specialised software is not needed, as the room mix will appear as a
+      standard USB microphone.
+    * Perhaps using dedicated Dante software would allow access to the
+      individual inputs? This has not been tested.
 * Overhead video camera. This appears as a capture card through the USB dock.
   However, its perspective (looking down on the presenter) is not ideal. Maddy
   elects not to use this camera.
@@ -41,7 +47,8 @@ Audio capture:
 Video capture:
 * Tripod.
 * Tripod to phone adapter.
-* Phone.
+* Phone. iPhones are very good, other high-end phones are also acceptable. It's
+  probably a good idea to ensure they have good low-light video performance.
 * Repeat for more camera angles.
 
 Resources for presenters:
@@ -92,17 +99,13 @@ Contact UNSW IT ahead of time if anything is broken.
 * Make sure they bring a device to present from, or inform us that they need a
   device. Specifically, ***DO NOT*** run the capture and the presentation from
   the same device for stability reasons.
-* Get presenter consent. Specifically, they should be able to consent or not
-  consent to each of the following individually:
-    * We will be recording their presentation.
-    * We can give them a copy of their recording, or edit and upload ourselves.
-    * We may include the recording on the website as an archive of the event.
-    * We may use parts of the recording to promote future iterations of the
-      event.
-    * Make sure they understand how to withdraw their consent.
-    * TODO: intellectual property and copyrights of the presentations? How can
-      we balance presenters rights over their work against our desire to promote
-      the event and showcase their work and the Linux Society's events.
+* Make sure intellectual property ownership is clear to presenters.
+    * Presenters work remains their intellectual property
+    * While we will be recording their presentation, these recordings will be
+      the property of the presenter.
+    * We may ask for permission to use these recordings, either to share and
+      celebrate the event, or promote future iterations of the event. Presenters
+      are free to decline if they desire.
 
 ## Promoting the Event
 
@@ -144,6 +147,8 @@ Our little website is in this repo. Add to it to promote the new event.
 * Make sure they all aim at a consistent location. Highly recommend using a test
   subject to validate. Take note of the edges of the frame.
 * Try to avoid getting the person running AV in shot.
+* It is highly recommended to disable auto white-balance to make it easier to
+  edit videos consistently.
 
 ### Presenter briefing
 
@@ -177,8 +182,9 @@ Our little website is in this repo. Add to it to promote the new event.
 ## After presentations
 
 * Collect all recordings and photos.
-* Edit videos together. Consider using promotional materials as a part of it,
-  especially during the intro and ending.
+* Get consent from all presenters, to upload recordings and/or promotion of
+  their work.
+* If consent was given, edit it.
 * Some presenters may wish to upload their recordings to their own channel, or
   edit it themselves. We are happy to give them their sections of the footage.
   If they do this, we will link to their uploaded version, rather than editing
@@ -187,3 +193,14 @@ Our little website is in this repo. Add to it to promote the new event.
   channel.
 * We should update the website to include the recordings.
 * Consider creating clips to use promotionally for future events.
+
+## If you need to compromise
+
+If you cannot record everything, it is worth deciding what to prioritise with
+recording. We recommend prioritising, in this order:
+
+1. Video footage of the presenter.
+2. Room audio capture. If you can't get this, you can use audio from the video
+   footage, but this will not be ideal.
+3. Slides capture. If you can't get this, you can recreate it from scratch after
+   the fact based on the video footage.
